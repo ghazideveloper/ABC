@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>JavaScript</title>
+
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+            font-family: monospace,sans-serif;
+        }
+        .container{
+           
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-image: linear-gradient(orange,white,green);
+            height: 100vh;
+                
+            
+            
+        }
+        .abcdef,.ghijkl,.mnopqr,.stuvwx,.yz{
+          
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-bottom: 3px;
+            color: brown;
+            
+            
+            
+        }
+        .speaker1{
+           
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0px;
+            color: red;
+            
+        }
+        h1{
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-size: 55px;
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: yellowgreen;
+            box-shadow: 4px 4px 8px brown;
+            text-shadow: 2px 2px 4px orange;
+        }
+        span{
+            display: block;
+            background-color: yellow;
+            padding-right: 18px;
+            padding-left: 18px;
+            cursor: pointer;
+             border-radius: 5px;
+            box-shadow: 4px 4px 8px brown;
+            text-shadow: 4px 4px 6px gray;
+            
+        }
+       
+        
+    </style>
+    
+    
+    
+    </head>
+<body>
+    <div class="container">
+        <div class="abcdef">
+            <h1>A</h1>
+            <h1>B</h1>
+            <h1>C</h1>
+            <h1>D</h1>
+            <h1>E</h1>
+            <h1>F</h1>
+        </div>
+        <div class="speaker1">
+         <span onclick="Asound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Bsound()"><i class="material-icons">volume_up</i></span> 
+         <span onclick="Csound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Dsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Esound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Fsound()"><i class="material-icons">volume_up</i></span>
+        </div>
+       
+        <div class="ghijkl">
+            <h1>G</h1>
+            <h1>H</h1>
+            <h1>I</h1>
+            <h1>J</h1>
+            <h1>K</h1>
+            <h1>L</h1></div>
+        <div class="speaker1">
+         <span onclick="Gsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Hsound()"><i class="material-icons">volume_up</i></span> 
+         <span onclick="Isound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Jsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Ksound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Lsound()"><i class="material-icons">volume_up</i></span>
+        </div>
+        <div class="mnopqr">
+            <h1>M</h1>
+            <h1>N</h1>
+            <h1>O</h1>
+            <h1>P</h1>
+            <h1>Q</h1>
+            <h1>R</h1></div>
+        <div class="speaker1">
+         <span onclick="Msound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Nsound()"><i class="material-icons">volume_up</i></span> 
+         <span onclick="Osound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Psound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Qsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Rsound()"><i class="material-icons">volume_up</i></span>
+        </div>
+        <div class="stuvwx">
+            <h1>S</h1>
+            <h1>T</h1>
+            <h1>U</h1>
+            <h1>V</h1>
+            <h1>W</h1>
+            <h1>X</h1></div>
+        <div class="speaker1">
+         <span onclick="Ssound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Tsound()"><i class="material-icons">volume_up</i></span> 
+         <span onclick="Usound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Vsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Wsound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Xsound()"><i class="material-icons">volume_up</i></span>
+        </div>
+        <div class="yz">
+            <h1>Y</h1>
+            <h1>Z</h1>
+            </div>
+        <div class="speaker1">
+         <span onclick="Ysound()"><i class="material-icons">volume_up</i></span>
+         <span onclick="Zsound()"><i class="material-icons">volume_up</i></span> 
+         
+        
+        </div>
+    </div>
+    
+<audio id="Asound">
+<source src="Asound.mp3" type="audio/mp3">
+</audio>
+<audio id="Bsound">
+<source src="Bsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Csound">
+<source src="Csound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Dsound">
+<source src="Dsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Esound">
+<source src="Esound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Fsound">
+<source src="Fsound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Gsound">
+<source src="Gsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Hsound">
+<source src="Hsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Isound">
+<source src="Isound.mp3" type="audio/mpeg">
+</audio>
+    
+    <audio id="Jsound">
+<source src="Jsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Ksound">
+<source src="Ksound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Lsound">
+<source src="Lsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Msound">
+<source src="Msound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Nsound">
+<source src="Nsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Osound">
+<source src="Osound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Psound">
+<source src="Psound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Qsound">
+<source src="Qsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Rsound">
+<source src="Rsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Ssound">
+<source src="Ssound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Tsound">
+<source src="Tsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Usound">
+<source src="Usound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Vsound">
+<source src="Vsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Wsound">
+<source src="Wsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Xsound">
+<source src="Xsound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Ysound">
+<source src="Ysound.mp3" type="audio/mpeg">
+</audio>
+    <audio id="Zsound">
+<source src="Zsound.mp3" type="audio/mpeg">
+</audio>
+    <script>
+    function Asound(){
+           var a = document.getElementById("Asound");
+           a.play();
+        }
+        
+    function Bsound(){
+           var a = document.getElementById("Bsound");
+           a.play();}
+        
+         function Csound(){
+           var a = document.getElementById("Csound");
+           a.play();}
+         function Dsound(){
+           var a = document.getElementById("Dsound");
+           a.play();}
+         function Esound(){
+           var a = document.getElementById("Esound");
+           a.play();}
+         function Fsound(){
+           var a = document.getElementById("Fsound");
+           a.play();}
+         function Gsound(){
+           var a = document.getElementById("Gsound");
+           a.play();}
+         function Hsound(){
+           var a = document.getElementById("Hsound");
+           a.play();}
+         function Isound(){
+           var a = document.getElementById("Isound");
+           a.play();}
+         function Jsound(){
+           var a = document.getElementById("Jsound");
+           a.play();}
+         function Ksound(){
+           var a = document.getElementById("Ksound");
+           a.play();}
+         function Lsound(){
+           var a = document.getElementById("Lsound");
+           a.play();}
+         function Msound(){
+           var a = document.getElementById("Msound");
+           a.play();}
+         function Nsound(){
+           var a = document.getElementById("Nsound");
+           a.play();}
+         function Osound(){
+           var a = document.getElementById("Osound");
+           a.play();}
+         function Psound(){
+           var a = document.getElementById("Psound");
+           a.play();}
+         function Qsound(){
+           var a = document.getElementById("Qsound");
+           a.play();}
+         function Rsound(){
+           var a = document.getElementById("Rsound");
+           a.play();}
+         function Ssound(){
+           var a = document.getElementById("Ssound");
+           a.play();}
+         function Tsound(){
+           var a = document.getElementById("Tsound");
+           a.play();}
+         function Usound(){
+           var a = document.getElementById("Usound");
+           a.play();}
+         function Vsound(){
+           var a = document.getElementById("Vsound");
+           a.play();}
+         function Wsound(){
+           var a = document.getElementById("Wsound");
+           a.play();}
+         function Xsound(){
+           var a = document.getElementById("Xsound");
+           a.play();}
+         function Ysound(){
+           var a = document.getElementById("Ysound");
+           a.play();}
+         function Zsound(){
+           var a = document.getElementById("Zsound");
+           a.play();}
+        
+        
+        
+    
+    
+    
+    </script>
+    </body>
+
+</html>
